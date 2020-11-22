@@ -2,13 +2,14 @@ import smtplib, ssl, getpass
 
 port = 465  # For SSL
 smtp_server = "smtp.gmail.com"
-sender_email = "my@gmail.com"  # Enter your address
-receiver_email = "your@gmail.com"  # Enter receiver address
+sender_email = "hasin.choudhury@cplusmanagement.com"  # Enter your address
+receiver_email = "it@cplusmanagement.com"  # Enter receiver address
 password = input("Type your password and press enter: ")
 message = f"""\
 Subject: Error in Application
 
-Application has thrown an error for today. Please check logs for "date".\n
+Application has thrown an error. Please check logs for "date".
+
 DO NOT REPLY."""
 
 context = ssl.create_default_context()
